@@ -82,6 +82,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and paste your API keys
+### Backend
 python app.py
 
 ### Frontend
