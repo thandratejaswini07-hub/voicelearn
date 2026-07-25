@@ -1,7 +1,7 @@
-﻿# VoiceLearn — Audio-First E-Learning for Visually Impaired Learners
+﻿# VoiceLearn — Audio-First E-Learning for Learners
 
 VoiceLearn is a fully accessible, audio-first educational web platform built
-specifically for visually impaired learners. Every interaction works through
+specifically for learners. Every interaction works through
 voice and keyboard alone. No visual perception required at any stage.
 
 ---
@@ -84,19 +84,13 @@ cp .env.example .env
 # Edit .env and paste your API keys
 python app.py
 
-Backend runs at: http://localhost:5000
-
 ### Frontend
 
 cd frontend
 npm install
 npm start
 
-Frontend runs at: http://localhost:3000
-
 ### Test backend is working
-
-Visit: http://localhost:5000/api/health
 
 Expected:
 {"status": "ok", "tts": "ElevenLabs", "ai": "Gemini 1.5 Flash"}
@@ -104,8 +98,7 @@ Expected:
 ---
 
 ## How to Use
-
-1. Open http://localhost:3000
+1. Open the website
 2. Page auto-announces and microphone activates
 3. Say register to create an account by voice
 4. Speak your name, username, and password when prompted
@@ -155,14 +148,3 @@ Each course has 6 topics with full audio narration and a 5-question spoken quiz.
 
 ---
 
-## Developed At
-
-Stanley College of Engineering and Technology for Women
-Department of Artificial Intelligence and Data Science
-Hyderabad, Telangana, India
-
----
-
-## License
-
-MIT License — free to use and modify with attribution.
