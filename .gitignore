@@ -1,0 +1,36 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyc
+venv/
+env/
+.env
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# React build
+frontend/build/
+
+# Environment files — NEVER upload
+backend/.env
+.env
+.env.local
+.env.production
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+backend/voicelearn.db
+voicelearn.db

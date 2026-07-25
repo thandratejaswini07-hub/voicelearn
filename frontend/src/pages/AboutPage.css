@@ -1,0 +1,198 @@
+.about-page { padding: 110px 0 80px; min-height: 100vh; }
+
+.about-hero { padding: 40px 0 60px; max-width: 700px; }
+
+.about-hero-badge {
+  display: inline-flex;
+  padding: 6px 16px;
+  background: var(--amber-glow);
+  border: 1px solid var(--amber-ring);
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber-soft);
+  margin-bottom: 20px;
+}
+
+.about-title { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+
+.about-title-em {
+  background: linear-gradient(135deg, var(--amber-pale), var(--amber-hot));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+}
+
+.about-intro { font-size: 1.08rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 32px; }
+
+.about-hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.section-heading { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 700; margin-bottom: 10px; }
+
+.section-subhead { font-size: 1rem; color: var(--text-secondary); margin-bottom: 36px; max-width: 500px; }
+
+.features-grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.about-feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition-base);
+  animation: fadeUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.about-feature-card:hover { border-color: var(--border-hover); transform: translateY(-3px); box-shadow: var(--shadow-amber); }
+
+.afc-icon  { font-size: 2rem; margin-bottom: 12px; display: block; }
+.afc-title { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; font-family: var(--font-body); letter-spacing: 0; }
+.afc-desc  { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+.courses-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.course-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all var(--transition-spring);
+  animation: fadeUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.course-detail-card:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: var(--shadow-amber); color: var(--text-primary); }
+
+.cdc-header { display: flex; align-items: flex-start; gap: 14px; }
+
+.cdc-emoji {
+  font-size: 2rem;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdc-title { font-size: 1rem; font-weight: 600; font-family: var(--font-body); letter-spacing: 0; margin-bottom: 6px; }
+.cdc-meta  { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; color: var(--text-muted); }
+.cdc-desc  { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; flex: 1; }
+.cdc-link  { font-size: 0.82rem; color: var(--amber-hot); font-weight: 600; transition: opacity var(--transition-fast); }
+.course-detail-card:hover .cdc-link { opacity: 0.8; }
+
+.tech-stack { display: flex; flex-direction: column; gap: 2px; }
+
+.tech-item {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: border-color var(--transition-fast);
+  animation: fadeUp 0.4s ease forwards;
+  opacity: 0;
+  align-items: center;
+}
+
+.tech-item:hover { border-color: var(--border-hover); }
+.tech-name { font-size: 0.9rem; font-weight: 600; color: var(--amber-hot); font-family: var(--font-mono); }
+.tech-role { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; }
+
+.keyboard-ref { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+
+.kref-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 16px;
+  padding: 12px 20px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.kref-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(245,158,11,0.06);
+  align-items: center;
+  transition: background var(--transition-fast);
+}
+
+.kref-row:last-child { border-bottom: none; }
+.kref-row:hover { background: var(--amber-glow); }
+
+.kref-row kbd {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--amber-soft);
+  white-space: nowrap;
+}
+
+.kref-row [role="cell"]:last-child { font-size: 0.88rem; color: var(--text-secondary); }
+
+.about-cta {
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-cta::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(245,158,11,0.1), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.about-cta-title { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 12px; position: relative; }
+.about-cta p     { color: var(--text-secondary); margin-bottom: 28px; font-size: 1rem; position: relative; }
+.about-cta .btn-lg { position: relative; }
+
+@media (max-width: 768px) {
+  .tech-item { grid-template-columns: 1fr; gap: 6px; }
+  .kref-header, .kref-row { grid-template-columns: 1fr; gap: 6px; }
+  .courses-detail-grid { grid-template-columns: 1fr; }
+}
